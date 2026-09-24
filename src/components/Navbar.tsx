@@ -26,10 +26,10 @@ export const Navbar: React.FC<NavbarProps> = ({
   isExportingPDF = false,
 }) => {
   return (
-    <header className="sticky top-0 z-40 border-b border-slate-200 bg-white/95 backdrop-blur-md px-4 lg:px-8 py-3 flex flex-wrap items-center justify-between gap-4 shadow-xs">
+    <header className="sticky top-0 z-40 border-b border-slate-200 bg-white px-4 lg:px-8 py-3 flex flex-wrap items-center justify-between gap-4 shadow-xs">
       {/* Brand */}
       <div className="flex items-center gap-3">
-        <div className="flex items-center justify-center w-9 h-9 rounded-lg bg-emerald-50 border border-emerald-200 text-emerald-700 font-bold shadow-xs">
+        <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-indigo-600 text-white font-bold shadow-xs">
           <ShieldCheck className="w-5 h-5" />
         </div>
         <div>
@@ -37,7 +37,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             <h1 className="text-lg font-bold tracking-tight text-slate-900">
               EcoPulse <span className="text-slate-500 font-normal text-sm">Platform</span>
             </h1>
-            <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-semibold bg-sky-50 text-sky-700 border border-sky-200">
+            <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[10px] font-semibold bg-sky-50 text-sky-700 border border-sky-200">
               <Cloud className="w-3 h-3 text-sky-600" />
               Cloudinary Powered
             </span>
@@ -55,7 +55,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             value={searchQuery}
             onChange={(e) => onSearchChange(e.target.value)}
             placeholder="Search field assets by location, tags, GPS coordinates..."
-            className="w-full bg-slate-50 border border-slate-200 focus:border-emerald-500 focus:bg-white rounded-lg pl-9 pr-3 py-1.5 text-xs text-slate-800 placeholder-slate-400 focus:outline-none transition"
+            className="w-full bg-slate-50 border border-slate-200 focus:border-indigo-500 focus:bg-white rounded-lg pl-9 pr-3 py-1.5 text-xs text-slate-800 placeholder-slate-400 focus:outline-none transition"
           />
         </div>
 
@@ -63,7 +63,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           value={selectedProjectId}
           onChange={(e) => onSelectProject(e.target.value)}
           aria-label="Filter ESG Project"
-          className="bg-slate-50 border border-slate-200 text-slate-700 text-xs rounded-lg px-3 py-1.5 font-medium focus:outline-none focus:border-emerald-500 cursor-pointer"
+          className="bg-slate-50 border border-slate-200 text-slate-700 text-xs rounded-lg px-3 py-1.5 font-medium focus:outline-none focus:border-indigo-500 cursor-pointer"
         >
           <option value="ALL">All Projects ({projects.length})</option>
           {projects.map((proj) => (
@@ -96,7 +96,7 @@ export const Navbar: React.FC<NavbarProps> = ({
 
         <button
           onClick={onOpenUploadModal}
-          className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-semibold transition cursor-pointer shadow-xs"
+          className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-semibold transition cursor-pointer shadow-xs"
         >
           <Upload className="w-3.5 h-3.5" />
           <span>Ingest Evidence</span>
