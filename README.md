@@ -1,4 +1,4 @@
-# EcoPulse — Environmental Media Intelligence & ESG Verification Platform
+# EcoPulse - Environmental Media Intelligence & ESG Verification Platform
 
 An enterprise platform for field media processing, computer vision EXIF verification, and automated ESG impact documentation. Powered by Cloudinary dynamic transformation pipelines and multi-spectral telemetry verification.
 
